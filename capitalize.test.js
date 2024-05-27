@@ -16,3 +16,7 @@ test('Capitalize a string', () => {
 test('Check for empty string', () => {
     expect(capitalize('')).toBe('')
 })
+
+test('Throw an error if input is not a string', () => {
+    expect(() => capitalize(232)).toThrow(TypeError)
+})
