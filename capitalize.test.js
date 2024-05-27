@@ -20,3 +20,7 @@ test('Check for empty string', () => {
 test('Throw an error if input is not a string', () => {
     expect(() => capitalize(232)).toThrow(TypeError)
 })
+
+test('Throw an error if no input is specified', () => {
+    expect(() => capitalize()).toThrow(Error)
+})
