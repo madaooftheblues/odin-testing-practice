@@ -6,4 +6,9 @@ test('module exists', () => {
 
 test('reverse a given string', () => {
     expect(reverseString('Hello World')).toBe('dlroW olleH')
+    expect(reverseString('Funia')).toBe('ainuF')
+})
+
+test('empty string should return an empty string', () => {
+    expect(reverseString('')).toBe('')
 })
